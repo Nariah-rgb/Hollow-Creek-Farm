@@ -1,0 +1,343 @@
+.family-img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    border: solid 4px #873319;
+    border-radius: 12px;
+}
+
+body {
+    background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (5).png");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "farmhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: #198754;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    font-family: "farmhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #198754;
+}
+h1::before,
+h1::after {
+    content: "❦";
+    color: #873319;
+    margin: 0 20px;
+    font-size: 2rem;
+}
+p {
+    font-family: "new-farm", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Center line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #198754;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.timeline-item .timeline-image,
+.timeline-item .timeline-text {
+    width: 50%;
+}
+
+.timeline-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.timeline-text {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Alternate layout */
+.timeline-item.reverse .timeline-content {
+    flex-direction: row-reverse;
+}
+
+/* Timeline dot */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: #198754;
+    border: 4px solid white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-content,
+    .timeline-item.reverse .timeline-content {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+
+    .timeline-item .timeline-image,
+    .timeline-item .timeline-text {
+        width: 100%;
+    }
+
+    .timeline-item::before {
+        left: 20px;
+        top: 20px;
+    }
+
+    .timeline-image img {
+        max-width: 100%;
+    }
+}
+/* Smooth animations */
+.timeline-image img,
+.timeline-text,
+.timeline-item::before {
+    transition: all 0.35s ease;
+}
+
+/* Image hover */
+.timeline-image img:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border-color: #198754;
+}
+
+/* Text card hover */
+.timeline-text:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    background: #fffdf8;
+}
+
+/* Grow timeline dot when hovering over item */
+.timeline-item:hover::before {
+    transform: translate(-50%, -50%) scale(1.5);
+    background: #873319;
+    box-shadow: 0 0 15px rgba(135, 51, 25, 0.5);
+}
+
+/* Slight movement for whole timeline row */
+.timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+}
+
+.timeline-content {
+    transition: transform 0.35s ease;
+}
+.timeline-item {
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.timeline-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.timeline-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.timeline-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav {
+    background-color: #8C2F27;
+    font-family: "playfair-display", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.75rem 2rem;
+}
+
+a.nav-link {
+    color: #F7F3EA;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+a.nav-link:hover {
+    color: #d9c9a5;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.about-us-text {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+     max-width: 1000px;
+    margin: 0 auto 5rem auto;
+
+    background: rgba(247, 243, 234, 0.97);
+
+    padding: 3rem;
+    border-radius: 20px;
+
+    border: 4px solid #873319;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15),
+        inset 0 0 0 2px #d8c7a3;
+
+    line-height: 1.9;
+    font-size: 1.1rem;
+}
+.about-us-text {
+    transition: all 0.35s ease;
+}
+
+
+.about-us-text:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.2),
+        inset 0 0 0 2px #d8c7a3;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f8f5ee;
+}
+
+.footer-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-divider {
+    width: 2px;
+    height: 180px;
+    background-color: #333;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-divider {
+        width: 80%;
+        height: 2px;
+    }
+}
+.hero {
+    height: 70vh;
+    background-image: url("Client Files/Hero Imgs/hero-farm-store-exterior-summer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
