@@ -1,5 +1,5 @@
 body {
-    background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (5).png");
+    background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (7).png");
     background-size: cover;
 }
 
@@ -10,20 +10,20 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 5rem;
-    color: #198754;
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #8C2F27;
+    text-shadow: 6px 6px 6px rgb(255, 255, 255), 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 h2 {
     font-family: "farmhand", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2.5rem;
-    color: #198754;
+    color: #596d39;
 }
 h1::before,
 h1::after {
     content: "❦";
-    color: #873319;
+    color: #8a8433;
     margin: 0 20px;
     font-size: 2rem;
 }
@@ -49,7 +49,7 @@ p {
     transform: translateX(-50%);
     width: 6px;
     height: 100%;
-    background: #873319;
+    background: #f8f5ee;
     border-radius: 10px;
 }
 
@@ -71,7 +71,7 @@ p {
     transform: translate(-50%, -50%);
     width: 24px;
     height: 24px;
-    background: #198754;
+    background: #596d39;
     border: 4px solid #f8f2e8;
     border-radius: 50%;
     z-index: 2;
@@ -83,11 +83,10 @@ p {
 }
 
 .timeline-item.left .family-img {
-    margin-right: calc(50% - 125px);
+    margin-right: calc(50% - 275px);
 }
-
 .timeline-item.left .leaf-info {
-    margin-left: 60px;
+    margin-left: 20px;
 }
 
 /* Right item = text left, image right */
@@ -97,58 +96,75 @@ p {
 }
 
 .timeline-item.right .family-img {
-    margin-left: calc(50% - 125px);
+    margin-left: calc(50% - 275px);
 }
 
 .timeline-item.right .leaf-info {
-    margin-right: 60px;
+    margin-right: 20px;
 }
 
 /* Image styling */
 .family-img {
-    width: 250px;
+    width: 300px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,.15);
 }
 
 /* Info card */
 .leaf-info {
-    width: 350px;
-    padding: 1.5rem;
-    background: #f8f2e8;
+     width: 550px;
+     height: auto;
+    padding: 2rem;
+    background: #f7f0df;
+    border: 8px solid white;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+     box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    transform: rotate(-1deg);
 }
-
+.timeline-item.right .leaf-info {
+    transform: rotate(1deg);
+}
 .family-img {
-    width: 250px;
+    width: 500px;
     height: auto;
+     z-index: 2;
     object-fit: cover;
+    border: 6px solid #8C2F27;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .leaf-info {
-    background:
-        linear-gradient(
-            rgba(255,255,255,.3),
-            rgba(255,255,255,.1)
-        ),
-        #f8f2e8;
+        width: 500px;          /* same as image width */
+    min-height: 300px;     /* similar visual height */
+     margin-top: -60px;
+    margin-left: 50px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    border: 2px solid #d8c7a3;
+    padding: 2.5rem;
+
+   background: #f6e7c1;
+
+    border: 6px solid #8C2F27;
 
     box-shadow:
-        0 8px 20px rgba(0,0,0,.12),
-        inset 0 0 0 2px rgba(255,255,255,.4);
+        inset 0 0 15px rgba(0,0,0,.1),
+        0 10px 20px rgba(0,0,0,.15);
 }
 
 .leaf-info h2 {
     margin-top: 0;
+     font-size: 4rem;
+     text-shadow: 2px 2px 4px rgba(140,47,39,.3);
 }
 
 .leaf-info p {
     margin-bottom: 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
 }
 
 .family-img,
@@ -227,7 +243,7 @@ a.nav-link:hover {
     content: "";
     width: 28px;
     height: 28px;
-    background: #8C2F27;
+    background: #8a8433;
     border: 5px solid #f7f3ea;
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(140,47,39,.25);
@@ -254,12 +270,12 @@ a.nav-link:hover {
      max-width: 1000px;
     margin: 0 auto 5rem auto;
 
-    background: rgba(247, 243, 234, 0.97);
+    background: rgb(229, 211, 170);
 
     padding: 3rem;
     border-radius: 20px;
 
-    border: 4px solid #873319;
+    border: 4px solid #8C2F27;
 
     box-shadow:
         0 10px 25px rgba(0,0,0,0.15),
@@ -285,7 +301,7 @@ a.nav-link:hover {
     justify-content: center;
     gap: 40px;
     padding: 40px;
-    background-color: #f8f5ee;
+    background-color: #d8c7a3;
 }
 
 .footer-logo {
@@ -347,11 +363,11 @@ a.nav-link:hover {
     color: white;
 }
 
+.hero-title {
+    font-size: 6rem;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
 .timeline::before {
-    background: linear-gradient(
-        to bottom,
-        #6f241d,
-        #a44d35,
-        #6f241d
-    );
+    background: #8C2F27;
 }

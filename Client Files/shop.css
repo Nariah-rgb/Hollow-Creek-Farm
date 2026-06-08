@@ -1,0 +1,196 @@
+body {
+    background-image: url("Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (5).png");
+    background-size: cover;
+}
+nav {
+    background-color: #8C2F27;
+    font-family: "playfair-display", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.75rem 2rem;
+}
+
+a.nav-link {
+    color: #F7F3EA;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+a.nav-link:hover {
+    color: #d9c9a5;
+}
+.timeline-item::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background: #8a8433;
+    border: 5px solid #f7f3ea;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(140,47,39,.25);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #d8c7a3;
+}
+
+.footer-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-divider {
+    width: 2px;
+    height: 180px;
+    background-color: #333;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-divider {
+        width: 80%;
+        height: 2px;
+    }
+}
+.product-card {
+    background: linear-gradient(
+        180deg,
+        #fbf8f1 0%,
+        #f7f3ea 100%
+    );
+
+    border: 4px solid #8a8433;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15),
+        inset 0 0 0 2px rgba(255,255,255,.5);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,.22),
+        inset 0 0 0 2px #d8c7a3;
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.8rem;
+    text-align: center;
+}
+
+.card-title {
+    font-family: "farmhand", serif;
+    font-size: 2.2rem;
+    color: #596d39;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-family: "new-farm", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.buy-btn,
+.btn-primary {
+    background-color: #8C2F27;
+    border: none;
+
+    color: #F7F3EA;
+
+    padding: 12px 28px;
+    border-radius: 50px;
+
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+.buy-btn:hover,
+.btn-primary:hover {
+    background-color: #596d39;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(89,109,57,.35);
+}
+.hero {
+    height: 70vh;
+    background-image: url("Client Files/Hero Imgs/hero-apple-orchard-creek-picnic-tables.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 6rem;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(255, 255, 255, 0.4);
+}
