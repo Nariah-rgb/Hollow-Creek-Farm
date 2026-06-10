@@ -1,6 +1,7 @@
 body {
-    background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (7).png");
+     background-image: url("Client Files/wood.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -18,7 +19,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 2.5rem;
-    color: #596d39;
+    color:  #2E4928;
 }
 h1::before,
 h1::after {
@@ -71,7 +72,7 @@ p {
     transform: translate(-50%, -50%);
     width: 24px;
     height: 24px;
-    background: #596d39;
+    background:  #2E4928;
     border: 4px solid #f8f2e8;
     border-radius: 50%;
     z-index: 2;
@@ -243,7 +244,7 @@ a.nav-link:hover {
     content: "";
     width: 28px;
     height: 28px;
-    background: #8a8433;
+    background:  #2E4928;
     border: 5px solid #f7f3ea;
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(140,47,39,.25);
@@ -348,24 +349,65 @@ a.nav-link:hover {
 
     position: relative;
 }
+.aboutus-banner {
+    position: absolute;
+
+    width: 70%;          /* adjust as needed */
+    max-width: 1200px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
 .hero-overlay {
     position: absolute;
     inset: 0;
-
-    background: rgba(0, 0, 0, 0.35);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    color: white;
+    background: rgba(0,0,0,.25);
+    z-index: 1;
 }
 
 .hero-title {
-    font-size: 6rem;
+    color: #8C2F27;
+    font-family: "farmhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8rem;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(255, 255, 255, 0.4);
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero-title {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 40vh;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
 }
 
 .timeline::before {

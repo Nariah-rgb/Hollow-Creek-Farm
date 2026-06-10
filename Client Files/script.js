@@ -66,6 +66,52 @@ const products = [
         image: "productPhotos/product-sourdough-bread-loaf.png",
         link: "#"
     }
+    ,
+    {
+        name: "Apple Cider",
+        description: "Fresh-pressed apple cider made from a blend of ripe orchard apples, delivering a naturally sweet and crisp flavor with a smooth, refreshing finish. Rich in apple aroma and golden in color, this traditional farm-style cider captures the taste of freshly harvested apples in every sip.",
+        price: "$10.99",
+        image: "productPhotos/product-fresh-apple-cider-jug.png",
+        link: "#"
+    },
+    {
+        name: "Cranberry Juice",
+        description: "Pure cranberry juice crafted from carefully selected cranberries, offering a bold, tart flavor balanced by subtle natural sweetness. Deep ruby-red in color and packed with refreshing fruit character, it provides a vibrant and invigorating drinking experience.",
+        price: "$11.99",
+        image: "cranberryjuice.png",
+        link: "#"
+    }
+    ,
+    {
+        name: "Orange Juice",
+        description: "Premium orange juice made from sun-ripened oranges, delivering a bright, citrusy flavor with the perfect balance of sweetness and refreshing tanginess. Vibrant in color and naturally rich in fruit taste, this smooth and refreshing beverage captures the freshness of freshly squeezed oranges in every glass.",
+        price: "$11.99",
+        image: "orangejuice.png",
+        link: "#"
+    }
+     ,
+    {
+        name: "Vegetable Basket",
+        description: "A hand-selected assortment of farm-fresh vegetables gathered at peak ripeness, featuring crisp greens, vibrant peppers, juicy tomatoes, sweet corn, and garden-fresh cucumbers. Carefully arranged in a rustic basket, this colorful collection offers exceptional freshness, quality, and flavor straight from the farm.",
+        price: "$10.99",
+        image: "productPhotos/product-seasonal-produce-basket.png",
+        link: "#"
+    },
+    {
+        name: "Fruit Basket",
+        description: "A premium selection of fresh, handpicked fruits including crisp apples, sweet oranges, ripe bananas, juicy grapes, and flavorful berries. Beautifully presented in a classic woven basket, this assortment delivers a perfect balance of sweetness, freshness, and natural goodness for any occasion.",
+        price: "$11.99",
+        image: "flowerbasket.png",
+        link: "#"
+    }
+    ,
+    {
+        name: "Flower Basket",
+        description: "A charming arrangement of fresh seasonal blooms featuring radiant sunflowers, elegant roses, cheerful daisies, and lush greenery. Expertly arranged in a handcrafted basket, this vibrant display brings natural beauty, color, and a touch of countryside charm to any home, celebration, or special event.",
+        price: "$11.99",
+        image: "fruitbasket.png",
+        link: "#"
+    }
 ];
 
 const container = document.getElementById("product-container");
@@ -82,7 +128,7 @@ products.forEach(product => {
                 <p class="card-text">${product.description}</p>
 
                 <div class="mt-auto">
-                    <h4 class="mb-3">${product.price}</h4>
+                    <h4 class="price mb-3">${product.price}</h4>
 
                     <a href="${product.link}" class="btn btn-primary">
                         Buy Now

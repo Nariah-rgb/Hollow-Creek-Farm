@@ -1,6 +1,5 @@
 body {
-    background-image: url("Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (5).png");
-    background-size: cover;
+     background: #FCEBCD;
 }
 nav {
     background-color: #8C2F27;
@@ -87,18 +86,8 @@ a.nav-link:hover {
     }
 }
 .product-card {
-    background: linear-gradient(
-        180deg,
-        #fbf8f1 0%,
-        #f7f3ea 100%
-    );
-
-    border: 4px solid #8a8433;
+    border: 4px solid #CA9F4A;
     border-radius: 20px;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,.15),
-        inset 0 0 0 2px rgba(255,255,255,.5);
 }
 
 .product-card:hover {
@@ -118,12 +107,12 @@ a.nav-link:hover {
 .card-body {
     padding: 1.8rem;
     text-align: center;
+    background: #FCEBCD;
 }
-
 .card-title {
     font-family: "farmhand", serif;
     font-size: 2.2rem;
-    color: #596d39;
+    color: #2E4928;
     margin-bottom: 1rem;
 }
 
@@ -135,15 +124,25 @@ a.nav-link:hover {
     margin-bottom: 1.5rem;
 }
 
+.price {
+    color: #8C2F27;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
 .buy-btn,
 .btn-primary {
     background-color: #8C2F27;
     border: none;
 
+    font-family: "playfair-display", serif;
+    font-weight: 400;
+    font-style: normal;
     color: #F7F3EA;
 
     padding: 12px 28px;
-    border-radius: 50px;
+    border-radius: 10px;
 
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -169,28 +168,70 @@ a.nav-link:hover {
     background-position: center;
     background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.shop-banner {
+    position: absolute;
+
+    width: 70%;          /* adjust as needed */
+    max-width: 1200px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
 .hero-overlay {
     position: absolute;
     inset: 0;
-
-    background: rgba(0, 0, 0, 0.35);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    color: white;
+    background: rgba(0,0,0,.25);
+    z-index: 1;
 }
 
 .hero-title {
-    font-size: 6rem;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(255, 255, 255, 0.4);
+    color: #8C2F27;
+    font-family: "farmhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8rem;
+     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(255, 255, 255, 0.4);
 }
+
+@media (max-width: 1024px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero-title {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 40vh;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
